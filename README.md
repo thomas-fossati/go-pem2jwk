@@ -1,13 +1,13 @@
 # go-pem2jwk
 PEM to JWK converter
 
-## Install
+## Install
 
 ```bash
 go install github.com/thomas-fossati/go-pem2jwk@latest
 ```
 
-## Run
+## Run
 
 ```bash
 go-pem2jwk < PEM_FILE > JWK_FILE
