@@ -4,7 +4,7 @@ import (
 	"bufio"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
+	"io"
 	"log"
 	"os"
 
@@ -14,7 +14,7 @@ import (
 func main() {
 	r := bufio.NewReader(os.Stdin)
 
-	pem, err := ioutil.ReadAll(r)
+	pem, err := io.ReadAll(r)
 	if err != nil {
 		log.Fatalf("reading PEM file from stdin: %s", err)
 	}
